@@ -1,0 +1,1492 @@
+@import url(./reset.css);
+@import url(./variables.css);
+@import url(./common.css);
+@import url(./fonts.css);
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', 'Inter';
+}
+
+/* Hero section */
+.hero-section {
+  position: relative;
+  background: 
+    linear-gradient(89.92deg, rgba(0, 0, 0, 0.9) 18.8%, rgba(0, 0, 0, 0) 99.94%), /* Gradient thứ nhất */
+    linear-gradient(180deg, rgba(0, 0, 0, 0.7) 2.72%, rgba(0, 0, 0, 0) 35.89%, rgba(0, 0, 0, 0.53) 100%), /* Gradient thứ hai */
+    url(../images/cod_vpn_gaming_promotion.jpeg);
+  background-size: cover; /* Lấp đầy block */
+  background-position: 64% center;
+}
+
+.header {
+  padding: 4px 20px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo .header__heading {
+  font-family: 'Arial';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-align: left;
+  text-wrap: nowrap; 
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.header__logo .header__subheading {
+  font-family: Arial;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: rgb(170, 171, 171);
+  text-transform: uppercase;  
+}
+
+.header__button, .header__nav {
+  display: none;
+}
+
+/* Top Navigation Menu */
+.topnav {
+  overflow: hidden;
+}
+
+.topnav #myLinks {
+  position: absolute;
+  display: none;
+  top: 44px;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  background-color: rgba(12, 12, 12, 0.9);
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  border-bottom: 1px solid #FF000026;
+}
+
+.topnav span.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 6px;
+}
+
+.hero-desc {
+  top: 30%;
+  margin: 20px;
+}
+
+.hero-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.hero-heading-sm {
+  font-size: 3.375rem;
+  line-height: 4.5rem;
+}
+
+.hero-heading-md {
+  display: none;
+}
+
+.icon-sm {
+  display: inline-flex;
+  gap: 10%;
+  width: 100%;
+  justify-content: center;
+}
+
+.icon-md {
+  display: none;
+}
+
+.platforms {
+  bottom: 0.75rem;
+}
+
+/* Support games */
+.support_games {
+  padding: 7.5rem 1.25rem 2rem;
+}
+
+.support_games .games {
+  gap: 20px;
+}
+
+.game_more {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+}
+
+/* Features */
+.features {
+  background: url(../images/features.png) no-repeat;
+  padding: 30rem 1.25rem 7.5rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-position: top -40rem bottom;
+  background-size: 384px auto;
+}
+
+.features__content {
+  width: 100%;
+}
+
+.features__heading {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: 'Inter';
+  margin: 0 0 2.75rem;
+}
+
+.features__container {
+  grid-column: span 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.item {
+  flex: 1 1 calc(50% - 32px);
+  box-sizing: border-box;
+}
+
+.card {
+  border: 1px solid #FF000026;
+  padding: 24px 24px 48px;
+  font-family: 'Montserrat';
+  background-color: rgb(11, 11, 11);
+  border-radius: 12px;
+}
+
+.card__icon {
+  border-radius: 9999px;
+  background: #FF00000A;
+  padding: 20px;
+  display: inline-flex;
+}
+
+.card__content {
+  margin-top: 48px;
+}
+
+.card__heading {
+  font-size: 20px;
+  line-height: 28px;
+  font-family: 'Montserrat';
+  margin-right: 54px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.card__description {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #8D8D8D;
+  margin: 12px 0 0;
+}
+
+/* comparison section */
+.comparison {
+  padding: 0 1.25rem 2.5rem;
+}
+
+.comparison-table {
+  text-align: center;
+  color: #fff;
+}
+
+.comparison__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.comparison-table h2 {
+  font-family: 'Montserrat';
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  margin: 0;
+}
+
+.comparison-table p {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin: 0;
+  color: #A6A6A6;
+}
+
+/* Table styles */
+.table-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 0 auto;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 37.5rem;
+}
+
+.row {
+  display: contents; /* Allow grid rows to act as rows */
+}
+
+.cell {
+  padding: 1rem;
+  font-size: 1rem;
+  border-bottom: 1px solid #FF000014;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+}
+
+.last--cell {
+  border-bottom: none;
+}
+
+/* Style for header row */
+.header .cell {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Highlight the center column with red border */
+.highlight {
+  background-color: rgb(12, 12, 12);
+  border-left: 2px solid #F51C1C; /* Left border for column */
+  border-right: 2px solid #F51C1C; /* Right border for column */
+}
+
+.highlight-top {
+  border-top: 2px solid #F51C1C;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.highlight-bottom {
+  border-bottom: 2px solid #F51C1C;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* Green and Red for checkmarks */
+.green {
+  color: #4caf50;
+  font-weight: 700;
+}
+
+.red {
+  color: #F51C1C;
+  font-weight: 700;
+}
+
+/* pricing section */
+.pricing {
+  padding: 0 1.25rem;
+}
+
+.pricing__heading {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 2.75rem;
+}
+
+.plans {
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+}
+
+.plan__card {
+  border: 1px solid #FF000014;
+  padding: 2.5rem;
+  border-radius: 12px;
+}
+
+.plan__card--title {
+  font-family: 'Montserrat';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.7px;
+  text-align: left;
+  margin: 0 0 42px;
+}
+
+.card__price {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #FF000014;
+}
+
+.card__price h3 {
+  font-family: 'Montserrat';
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 73.14px;
+  letter-spacing: -1px;
+  text-align: left;
+  margin: 0;
+  display: inline;
+}
+
+.card__price > span {
+  display: inline-flex;
+  color: #A6A6A6;
+}
+
+.plans .card--bg {
+  background-color: rgb(20, 20, 20);
+}
+
+.plan__card .card__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.plan__card .card__list li {
+  background-image: url('../svg/tick.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
+
+.plan__card .card__button {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #F51C1C;
+  background-color: unset;
+  color: #F51C1C;
+  padding: 12px 0;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+
+.plan__card .card__button--first:hover {
+  background-color: #F51C1C;
+  color: #000;
+  cursor: pointer;
+}
+
+.plan__card .card__button--year {
+  background-color: #F51C1C;
+  color: #000;
+}
+
+.plan__card .card__button--year:hover {
+  background-color: unset;
+  color: #F51C1C;
+  cursor: pointer;
+}
+
+/* Method section */
+#method_section {
+  padding: 0 1.25rem 7.5rem;
+}
+
+#method_section > div {
+  flex-wrap: wrap;
+  margin-top: 58px;
+  padding: 0 6.25rem;
+  gap: 6.25rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* location */
+.location {
+  padding: 0 1.25rem 5rem;
+}
+
+.location .location__content h2 {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-align: left;
+  margin: 0;
+}
+
+.location .location__content h2:first-child {
+  color: #FF0000;
+}
+
+.location .location__image {
+  margin-top: 2.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+.location__image img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+/* FAQ */
+.faq__section {
+  padding: 0px 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  flex-direction: column;
+}
+
+.faq__section > div {
+  width: 100%;
+}
+
+.faq__content > div {
+  margin-bottom: 20px;
+}
+
+.faq__content > img {
+  display: none;
+}
+
+.faq__content .faq__heading {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.faq__content .faq__description {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #A6A6A6;
+  margin: 0;
+}
+
+.faq {
+  font-family: Arial, sans-serif;
+}
+
+.faq-item {
+  background-color: rgb(12, 12, 12);
+  margin-bottom: 20px;
+  border-radius: 16px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.4px;
+  text-align: left;
+}
+
+.faq-item > div {
+  position: relative;
+}
+
+.faq-question {
+  background-color: rgb(12, 12, 12);
+  color: white;
+  padding: 20px 60px 20px 20px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  border-radius: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: rgb(20, 20, 20);
+}
+
+.faq-item.open {
+  border: 1px solid #FF000026;
+  border-radius: 16px;
+}
+
+.faq-item.open .faq-question {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.faq-answer {
+  padding: 15px;
+  background-color: rgb(20, 20, 20);
+  color: #aaa;
+  display: none;
+  border-radius: 0 0 16px 16px;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-item.open .arrow {
+  background-image: url(../svg/arrow-up.svg);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 30%;
+  right: 20px;
+}
+
+.faq-item .arrow {
+  background-image: url(../svg/arrow_down.svg);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 30%;
+  right: 20px;
+}
+
+.faq-item.open .faq-question {
+  background-color: rgb(20, 20, 20);
+}
+
+.faq__img_sm {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 2.5rem 1.25rem 20px;
+  margin-top: 12px;
+  border-top: 1px solid #1A1A1A;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Đảm bảo footer linh hoạt */
+  padding: 0 20px;
+}
+
+.footer-section {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.footer-section p {
+  display: none;
+}
+
+/* Liên kết */
+.footer-section.links {
+  min-width: 250px;
+}
+
+.footer-section.links h4 {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin: 0 0 16px;
+}
+
+.footer-section.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section.links ul li {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #A6A6A6;
+  margin-bottom: 12px;
+}
+
+.footer-section.links ul li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-section.links ul li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.hide-sm {
+  display: none;
+}
+
+/* social */
+.social-media {
+  max-width: 100px;
+  text-align: right;
+  margin-right: 57px;
+}
+
+.social-media h4 {
+  font-family: 'Montserrat';
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  margin: 0 0 16px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons span {
+  font-size: 24px;
+  margin-left: 20px;
+  color: #ccc;
+}
+
+.copyright-sm {
+  padding: 0 20px;
+  color: rgba(67, 66, 68, 1);
+  font-family: 'Inter';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+
+@media (min-width: 640px) {
+  .table {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .topnav span.icon {
+    display: none;
+  }
+  
+  /* Hero section */
+  .hero-section {
+    background-position: 72% center;
+    height: 1366px;
+  }
+
+  .hero-desc {
+    width: 843px;
+    left: 2.625rem;
+  }
+
+  .header__logo {
+    display: inline;
+    flex-direction: column;
+  }
+
+  .header__logo .header__heading {
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-wrap: nowrap; 
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .header__logo .header__subheading {
+    font-family: Arial;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: rgb(170, 171, 171);
+    text-transform: uppercase;  
+  }
+
+  .hero-desc button:active {
+    background-color: antiquewhite;
+  }
+
+  .hero-heading-sm {
+    display: none;
+  }
+  
+  .hero-heading-md {
+    display: block;
+    width: 843px;
+    font-family: Montserrat;
+    font-size: 92px;
+    font-weight: 500;
+    line-height: 108px;
+    text-align: left;
+  }
+
+  /* Header Section */
+  .header {
+    background: unset;
+    padding: 1.375rem 2.625rem;
+    display: flex;
+  }
+
+  .header__menu {
+    background: unset;
+    margin: 0 35px;
+  }
+
+  .header__menu > li > a {
+    display: inline-block;
+    cursor: pointer;
+    padding: 12px;
+    color: white;
+    text-decoration: none; 
+    text-wrap: nowrap;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .header__menu > li:hover {
+    background-color: rgba(146, 146, 146, 0.2);
+    border-radius: 12px;
+  }
+
+  .topnav a {
+    border: none;
+  }
+
+  .header__nav {
+    display: block;
+  }
+
+  .header__button {
+    display: block;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 10px 36px;
+    background: unset;
+    color: var(--primary-color);
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    text-wrap: nowrap;
+  }
+
+  .header__button:hover {
+    cursor: pointer;
+  }
+
+  .icon-sm {
+    display: none;
+  }
+  
+  .icon-md {
+    display: flex;
+    justify-content: space-between;
+    gap: 38px;
+  }
+
+  .icon-md > img {
+    width: 100px;
+  }
+
+  .support_games {
+    padding: 7.5rem 3rem;
+  }
+
+  .support_games .games {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .platforms {
+    padding: 0rem 42px;
+  }
+
+  .games > img {
+    width: 141px;
+  }
+
+  /* Feature section */
+  .features {
+    background-size: 430px auto;
+    padding: 5rem 2.625rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 58px;
+    background-position: -4.5rem bottom;
+  }
+
+  .features__container {
+    grid-column: span 4;
+    gap: 20px;
+  }
+
+  .features__heading {
+    margin: 0;
+  }
+
+  .card__heading {
+    margin-right: 0;
+  }
+
+  /* comparison section */
+  .comparison {
+    padding: 5rem 42px;
+  }
+
+  .comparison__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 60px;
+  }
+
+  .comparison-table h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .comparison-table p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 39rem;
+  }
+
+  /* Table styles */
+  .table {
+    width: 100%;
+  }
+
+  .row {
+    display: contents; /* Allow grid rows to act as rows */
+  }
+
+  .cell {
+    padding: 1rem;
+    font-size: 1rem;
+    border-bottom: 1px solid #FF000014;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.2px;
+  }
+
+  .last--cell {
+    border-bottom: none;
+  }
+
+  /* Style for header row */
+  .header .cell {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  /* Highlight the center column with red border */
+  .highlight {
+    background-color: rgb(12, 12, 12);
+    border-left: 2px solid #F51C1C; /* Left border for column */
+    border-right: 2px solid #F51C1C; /* Right border for column */
+  }
+
+  .highlight-top {
+    border-top: 2px solid #F51C1C;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .highlight-bottom {
+    border-bottom: 2px solid #F51C1C;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  /* Green and Red for checkmarks */
+  .green {
+    color: #4caf50;
+    font-weight: 700;
+  }
+
+  .red {
+    color: #F51C1C;
+    font-weight: 700;
+  }
+
+  /* pricing section */
+  .pricing {
+    padding: 0 42px;
+  }
+
+  .pricing__heading {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 3.75rem;
+  }
+
+  .plans {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .plan__card {
+    width: calc(50% - 6.5rem);
+    border: 1px solid #FF000014;
+    padding: 2.5rem;
+    border-radius: 12px;
+  }
+
+  .plan__card--title {
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.7px;
+    text-align: left;
+    margin: 0 0 42px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .plan__card-discount {
+    top: 4px;
+    left: 133px;
+    padding: 8px 20px 8px 20px;
+    gap: 12px;
+    border-radius: 100px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    background-color: rgb(29, 29, 29);
+    color: var(--primary-color);
+  }
+
+  .card__price {
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #FF000014;
+  }
+
+  .card__price h3 {
+    font-family: 'Montserrat';
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 73.14px;
+    letter-spacing: -1px;
+    text-align: left;
+    margin: 0;
+    display: inline;
+  }
+
+  .card__price > span {
+    display: inline-flex;
+    color: #A6A6A6;
+  }
+
+  .plans .card--bg {
+    background-color: rgb(20, 20, 20);
+  }
+
+  .plan__card .card__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .plan__card .card__list li {
+    background-image: url('../svg/tick.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+  }
+
+  .plan__card .card__button {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #F51C1C;
+    background-color: unset;
+    color: #F51C1C;
+    padding: 12px 0;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .plan__card .card__button--first:hover {
+    background-color: #F51C1C;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .plan__card .card__button--year {
+    background-color: #F51C1C;
+    color: #000;
+  }
+
+  .plan__card .card__button--year:hover {
+    background-color: unset;
+    color: #F51C1C;
+    cursor: pointer;
+  }
+
+  /* method_section */
+  #method_section {
+    padding: 7.5rem 42px;
+  }
+
+  #method_section > div {
+    flex-direction: row;
+    margin-top: 28px;
+    padding: 0;
+    gap: 71px;
+  }
+
+  #method_section > div > img {
+    width: 120px;
+    height: 64px;
+  }
+
+  /* location */
+  .location {
+    padding: 5rem;
+  }
+
+  .location .location__image {
+    margin: auto;
+    margin-top: 4.5rem;
+  }
+
+  /* FAQ */
+  .faq__section {
+    padding: 5rem 46px 0px;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-direction: row;
+  }
+
+  .faq__section > div {
+    width: calc(50% - 1.25rem);
+  }
+
+  .faq__content > div {
+    margin-bottom: 20px;
+  }
+
+  .faq__content > img {
+    margin-top: 36px;
+    display: block;
+    width: 456px;
+  }
+
+  .faq__content .faq__heading {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .faq__content .faq__description {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #A6A6A6;
+    margin: 0;
+  }
+
+  .faq {
+    font-family: Arial, sans-serif;
+  }
+
+  .faq-item {
+    background-color: rgb(12, 12, 12);
+    margin-bottom: 20px;
+    border-radius: 16px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    text-align: left;
+  }
+
+  .faq-item > div {
+    position: relative;
+  }
+
+  .faq-question {
+    padding: 20px 60px 20px 20px;
+    font-size: 15px;
+  }
+
+  .faq-question:hover {
+    background-color: rgb(20, 20, 20);
+  }
+
+  .faq-item.open {
+    border: 1px solid #FF000026;
+    border-radius: 16px;
+  }
+
+  .faq-item.open .faq-question {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .faq-answer {
+    padding: 15px;
+    background-color: rgb(20, 20, 20);
+    color: #aaa;
+    display: none;
+    border-radius: 0 0 16px 16px;
+  }
+
+  .faq-item.open .faq-answer {
+    display: block;
+  }
+
+  .faq-item.open .faq-question {
+    background-color: rgb(20, 20, 20);
+  }
+
+  .faq__img_sm {
+    display: none;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 3.75rem 5rem;
+    flex-direction: row;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Đảm bảo footer linh hoạt */
+    padding: 0 20px;
+  }
+
+  .footer-section {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .footer-section p {
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #2F2F2F;
+    display: block;
+  }
+
+  /* Liên kết */
+  .footer-section.links {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .footer-section.links h4 {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    margin: 0 0 16px;
+  }
+
+  .footer-section.links ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-section.links ul li {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #A6A6A6;
+  }
+
+  .footer-section.links ul li:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* social */
+  .social-media {
+    flex: 1;
+    max-width: 100px;
+    text-align: right;
+    margin-right: 57px;
+  }
+
+  .social-media h4 {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    margin: 0 0 16px;
+  }
+
+  .social-icons {
+    text-align: left;
+  }
+
+  .social-icons span {
+    font-size: 24px;
+    margin-left: 20px;
+    color: #ccc;
+  }
+
+  .hide-sm {
+    display: block;
+  }
+
+  .copyright-sm {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero-section {
+    height: 100vh;
+  }
+
+  .header {
+    padding: 1.75rem 5rem;
+  }
+
+  .header__logo {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__menu > li > a {
+    padding: 12px 36px;
+  }
+
+  .header__logo .header__heading {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .hero-heading-md {
+    font-size: 72px;
+    line-height: 80px;
+  }
+
+  .platforms {
+    bottom: 4.75rem;
+    padding: 0 185px;
+  }
+
+  .icon-md > img {
+    width: 100%;
+  }
+
+  .support_games {
+    padding: 7.5rem 5rem;
+  }
+
+  .features {
+    padding: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    background-position: 0 bottom;
+    background-size: auto;
+  }
+
+  .features__container {
+    grid-column: span 2;
+  }
+
+  .comparison {
+    padding: 5rem;
+  }
+
+  .pricing {
+    padding: 5rem;
+  }
+
+  #method_section {
+    padding: 5rem;
+  }
+
+  #method_section > div {
+    margin: 0 48px;
+  }
+
+  .faq__section {
+    padding: 5rem;
+  }
+
+  .faq__content .faq__description {
+    width: 348px;
+  }
+
+  .faq__content > img {
+    width: auto;
+  }
+}
+
+.hero-section--winter {
+  position: relative;
+  background: 
+    linear-gradient(89.92deg, rgba(0, 0, 0, 0.9) 18.8%, rgba(0, 0, 0, 0) 99.94%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.7) 2.72%, rgba(0, 0, 0, 0) 35.89%, rgba(0, 0, 0, 0.53) 100%),
+    url(../images/Snow.png),
+    url(../images/cod_vpn_gaming_promotion.jpeg);
+  background-size: cover, contain, cover, cover;
+  background-position: 72% center, top left, 64% center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  pointer-events: none;
+}
+
+.footer-winter {
+  background: url(/assets/images/snow_bottom.png) repeat-x;
+  background-position: bottom;
+  pointer-events: none;
+}
+
+.games-winter-left {
+  position: absolute;
+  background: url(../images/snow_game_left.png) no-repeat;
+  width: 10rem;
+  height: 70rem;
+  pointer-events: none;
+}
+
+.games-winter-right {
+  position: absolute;
+  background: url(../images/snow_game_right.png) repeat-y;
+  width: 10rem;
+  height: 80rem;
+  right: 0;
+  background-position: right;
+  pointer-events: none;
+}
+
+.pricing-winter-left {
+  position: absolute;
+  background: url(../images/snow_game_left.png) repeat-y;
+  width: 10rem;
+  height: 70rem;
+  pointer-events: none;
+}
+
+.pricing-winter-right {
+  position: absolute;
+  background: url(../images/snow_game_right.png) repeat-y;
+  width: 10rem;
+  height: 120rem;
+  right: 0;
+  background-position: right;
+  pointer-events: none;
+}
