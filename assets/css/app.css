@@ -350,7 +350,7 @@ body {
 }
 
 .plan__card {
-  border: 1px solid #FF000014;
+  border: 1px solid #401A1A;
   padding: 2.5rem;
   border-radius: 12px;
 }
@@ -367,7 +367,7 @@ body {
 
 .card__price {
   padding-bottom: 2rem;
-  border-bottom: 2px solid #FF000014;
+  border-bottom: 1px solid #401A1A;
 }
 
 .card__price h3 {
@@ -530,6 +530,7 @@ body {
 
 .faq-item {
   background-color: rgb(12, 12, 12);
+  border: 1px solid rgb(12, 12, 12);
   margin-bottom: 20px;
   border-radius: 16px;
   font-family: 'Montserrat';
@@ -579,6 +580,11 @@ body {
   color: #aaa;
   display: none;
   border-radius: 0 0 16px 16px;
+}
+
+
+.faq-answer p{
+  margin: 0;
 }
 
 .faq-item.open .faq-answer {
@@ -1479,6 +1485,7 @@ body {
   width: 10rem;
   height: 70rem;
   pointer-events: none;
+  z-index: -10;
 }
 
 .pricing-winter-right {
@@ -1489,4 +1496,5 @@ body {
   right: 0;
   background-position: right;
   pointer-events: none;
+  z-index: -10;
 }
