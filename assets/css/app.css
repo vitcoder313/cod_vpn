@@ -740,12 +740,6 @@ body {
   text-align: left;
 }
 
-@media (min-width: 640px) {
-  .table {
-    width: 100%;
-  }
-}
-
 @media (min-width: 1024px) {
   .topnav span.icon {
     display: none;
@@ -1449,7 +1443,22 @@ body {
 }
 
 /* Mobile Break point */
-@media (max-width: 767px) { 
+@media (max-width: 768px) { 
+  .header {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .topnav span.icon {
+    position: unset;
+  }
+
+  .topnav #myLinks {
+    top: 90px;
+  }
+
   .hero-desc {
     top: 25%;
   }
@@ -1469,6 +1478,9 @@ body {
   }
   /* platforms icons*/
 
+  .table {
+    width: 100%;
+  }
 }
 
 .hero-section--winter {
