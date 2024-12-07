@@ -126,6 +126,11 @@ body {
   bottom: 0.75rem;
 }
 
+.platforms img {
+  max-width: 150px;
+  height: 32px;
+}
+
 /* Support games */
 .support_games {
   padding: 7.5rem 1.25rem 2rem;
@@ -1440,6 +1445,29 @@ body {
   .faq__content > img {
     width: auto;
   }
+}
+
+/* Mobile Break point */
+@media (max-width: 767px) { 
+  .hero-desc {
+    top: 25%;
+  }
+  
+  .hero-desc button{
+    width: 100%;
+    margin-top: 5rem;  
+  }
+  
+  /* platforms icons*/
+  .platforms {
+    bottom: 4rem;
+  }
+
+  .platforms > div {
+    gap: 6%;
+  }
+  /* platforms icons*/
+
 }
 
 .hero-section--winter {
