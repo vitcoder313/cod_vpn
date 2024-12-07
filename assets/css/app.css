@@ -358,6 +358,7 @@ body {
   border: 1px solid #401A1A;
   padding: 2.5rem;
   border-radius: 12px;
+  background-color: #000000;
 }
 
 .plan__card--title {
