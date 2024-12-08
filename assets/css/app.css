@@ -823,10 +823,14 @@ body {
   color: var(--primary-color);
 }
 
+.card--bg {
+  position: relative;
+}
+
 .card-ice {
   position: absolute;
-  right: 4px;
-  top: 5%;
+  right: -3%;
+  top: -5%;
 }
 
 .card-ice img {
@@ -838,11 +842,6 @@ body {
     background-position: 64% center, 74% center;
   }
 
-  .card-ice {
-    right: 8px;
-    top: 11%;
-  }
-  
   .card-ice img {
     width: 354px;
   }
