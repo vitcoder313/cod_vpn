@@ -1582,22 +1582,38 @@ body {
 }
 
 /* Mobile Break point */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .hero-section {
+    height: 932px;
+  }
+
   .hero-desc {
-    top: 25%;
+    top: 20%;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .hero-desc button{
-    /* width: 100%; */
-    margin-top: 5rem;  
+    width: 100%;
+    margin-top: 5rem;
   }
   
   /* platforms icons*/
   .platforms {
-    bottom: 4rem;
+    bottom: 3rem;
   }
 
   .platforms > div {
     gap: 20px;
+  }
+
+  .location__image {
+    overflow: hidden;
+  }
+
+  #method_section > div {
+    padding: 0;
   }
 }
