@@ -148,6 +148,10 @@ body {
   padding: 6px;
 }
 
+.hero-desc button {
+  color: black;
+}
+
 .hero-desc {
   top: 30%;
   margin: 20px;
@@ -383,6 +387,7 @@ body {
 .green {
   color: #4caf50;
   font-weight: 700;
+  font-family: Arial, sans-serif;
 }
 
 .red {
