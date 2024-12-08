@@ -526,8 +526,8 @@ body {
 }
 
 /* location */
-.location {
-  padding: 0 1.25rem 10rem;
+.location .location__content{
+  padding: 0px 20px;
 }
 
 .location .location__content h2 {
