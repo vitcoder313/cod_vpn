@@ -13,7 +13,6 @@ body {
   font-family: 'Montserrat', 'Inter';
 }
 
-
 .hero-section--winter {
   position: relative;
   background:
@@ -804,7 +803,7 @@ body {
   padding: 0;
   color: rgba(67, 66, 68, 1);
   font-family: 'Inter';
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   line-height: 16px;
   text-align: left;
@@ -1572,15 +1571,12 @@ body {
 
 /* Mobile Break point */
 @media (max-width: 1024px) {
-  .table {
-    width: 100%;
-  }
-
   .card-ice {
     top: -4%;
   }
 
-  .hero-section {
+  .hero-section.h-screen,
+  .hero-section--winter.h-screen{
     height: 932px;
   }
 

@@ -28,16 +28,8 @@ const updateHeroSectionBackground = () => {
   if (currentMonth === 11) {
     const heroSection = document.querySelector(".hero-section");
     if (heroSection) {
+			heroSection.classList.remove('hero-section')
       heroSection.classList.add("hero-section--winter");
-      heroSection.style.background = `
-      linear-gradient(89.92deg, rgba(0, 0, 0, 0.9) 18.8%, rgba(0, 0, 0, 0) 99.94%),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.7) 2.72%, rgba(0, 0, 0, 0) 35.89%, rgba(0, 0, 0, 0.53) 100%),
-      url(assets/images/Snow.png),
-      url(assets/images/cod_vpn_gaming_promotion.jpeg)
-    `;
-      heroSection.style.backgroundSize = "cover, contain, cover, cover";
-      heroSection.style.backgroundPosition = "64% center, top left, 64% center, center";
-      heroSection.style.backgroundRepeat = "no-repeat, no-repeat, no-repeat, no-repeat";
     }
 
     const gameLeft = document.querySelector(".games-winter-left");
