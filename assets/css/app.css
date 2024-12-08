@@ -559,7 +559,7 @@ body {
 
 /* FAQ */
 .faq__section {
-  padding: 0px 1.25rem;
+  padding: 10rem 1.25rem 0;
   display: flex;
   justify-content: space-between;
   gap: 2.5rem;
