@@ -56,6 +56,11 @@ const updateHeroSectionBackground = () => {
     if (pricingRight) {
       pricingRight.style.display = "block";
     }
+
+    const faqBg = document.querySelector('.faq-contain');
+    if (faqBg) {
+      faqBg.classList.add('faq-bg');
+    }
   }
 };
 

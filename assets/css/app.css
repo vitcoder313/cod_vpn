@@ -62,11 +62,12 @@ body {
   position: absolute;
   background: url(../images/snow_game_right.png) repeat-y;
   width: 10rem;
-  height: 120rem;
+  height: 100rem;
   right: 0;
   background-position: right;
   pointer-events: none;
   z-index: -10;
+  transform: translateY(40%);
 }
 
 /* Hero section */
@@ -145,7 +146,7 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 6px;
+  padding: 6px 20px 6px 6px;
 }
 
 .hero-desc button {
@@ -588,8 +589,17 @@ body {
 }
 
 /* FAQ */
+.faq-contain {
+  margin-top: 10rem;
+  padding: 0 1.25rem;
+}
+
+.faq-contain.faq-bg {
+  background: url(../images/snow_game_right.png) no-repeat;
+  background-position: 100% top;
+}
+
 .faq__section {
-  padding: 10rem 1.25rem 0;
   display: flex;
   justify-content: space-between;
   gap: 2.5rem;
@@ -874,6 +884,15 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .pricing-winter-right {
+    height: 130rem;
+    transform: translateY(0);
+  }
+
+  .faq-contain.faq-bg {
+    background-image: none;
+  }
+
   .hero-section--winter {
     background-position: 64% center, 74% center;
   }
