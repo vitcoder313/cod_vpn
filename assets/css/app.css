@@ -211,13 +211,37 @@ body {
 
 /* Features */
 .features {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.55) 50%, #000000 100%), url(../images/features.png) no-repeat;
-  ;
   padding: 30rem 1.25rem 7.5rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   background-position: top -40rem bottom;
   background-size: 384px auto;
+  position: relative;
+}
+
+.features .image-container {
+  position: absolute;
+}
+
+.features img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.features .gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; /* Adjust as needed */
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.55) 50%,
+    #000000 100%
+  );
+  pointer-events: none;
 }
 
 .features__content {
@@ -672,7 +696,7 @@ body {
 }
 
 .faq-item.open .arrow {
-  background-image: url(../svg/arrow-up.svg);
+  background-image: url(../svg/arrow_down.svg);
   width: 24px;
   height: 24px;
   position: absolute;
@@ -681,7 +705,7 @@ body {
 }
 
 .faq-item .arrow {
-  background-image: url(../svg/arrow_down.svg);
+  background-image: url(../svg/arrow-up.svg);
   width: 24px;
   height: 24px;
   position: absolute;
@@ -993,6 +1017,12 @@ body {
     height: 28px;
   }
 
+  .features .image-container {
+    bottom: 4%;
+    left: -7%;
+    width: 35%;
+  }
+
   .support_games {
     padding: 7.5rem 3rem;
   }
@@ -1020,7 +1050,7 @@ body {
     background-size: 296px auto;
     padding: 5rem 2.625rem;
     grid-template-columns: repeat(5, 1fr);
-    gap: 58px;
+    gap: 94px;
     background-position: -2.5rem bottom;
   }
 
@@ -1537,6 +1567,10 @@ body {
 
   .features__container {
     grid-column: span 2;
+  }
+
+  .features .image-container {
+    left: 0;
   }
 
   .plan__card {
