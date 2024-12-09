@@ -566,6 +566,7 @@ body {
   letter-spacing: 0.02em;
   text-align: left;
   margin: 0;
+  white-space: nowrap;
 }
 
 .location .location__content h2:first-child {
@@ -679,7 +680,7 @@ body {
 }
 
 .faq-answer {
-  padding: 0 15px 15px;
+  padding: 0 20px 15px;
   background-color: rgb(20, 20, 20);
   color: #aaa;
   display: none;
