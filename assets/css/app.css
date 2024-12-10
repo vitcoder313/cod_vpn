@@ -1149,6 +1149,7 @@ body {
   }
 
   .cell {
+    padding: 1.25rem;
     font-family: 'Montserrat';
     font-size: 18px;
     line-height: 24px;
@@ -1158,6 +1159,11 @@ body {
   .header .cell {
     font-size: 20px;
     line-height: 28px;
+    padding-top: 22px;
+  }
+
+  .footer .cell {
+    padding-bottom: 22px;
   }
 
   .last--cell {
@@ -1670,6 +1676,14 @@ body {
 
   .hero-section--winter {
     background-position: 64% center, 46% center;
+  }
+
+  .header .cell {
+    padding-top: 24px;
+  }
+
+  .footer .cell {
+    padding-bottom: 24px;
   }
 }
 
