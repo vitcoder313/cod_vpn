@@ -372,21 +372,35 @@ body {
 .cell {
   padding: 1rem;
   border-bottom: 1px solid #FF000014;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0.2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .last--cell {
   border-bottom: none;
 }
 
+.cell.text-left {
+  justify-content: flex-start;
+  text-align: left;
+}
+
 /* Style for header row */
 .header .cell {
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.header .cell.color-gray {
+  color: rgba(161, 161, 161, 1);
 }
 
 /* Highlight the center column with red border */
@@ -446,7 +460,7 @@ body {
 }
 
 .plan__card {
-  border: 1px solid #401A1A;
+  border: 1px solid rgba(47, 9, 9, 1);
   padding: 2.5rem;
   border-radius: 12px;
   background-color: #000000;
@@ -692,9 +706,12 @@ body {
 .faq-answer {
   padding: 0 20px 15px;
   background-color: rgb(20, 20, 20);
-  color: #aaa;
+  color: #73747B;
   display: none;
   border-radius: 0 0 16px 16px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
 }
 
 
@@ -726,6 +743,9 @@ body {
 
 .faq-item.open .faq-question {
   background-color: rgb(20, 20, 20);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .faq__img_sm {
@@ -1129,24 +1149,19 @@ body {
   }
 
   .cell {
-    padding: 1rem;
-    font-size: 1rem;
-    border-bottom: 1px solid #FF000014;
-    font-family: Montserrat;
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.5rem;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 24px;
     letter-spacing: 0.2px;
+  }
+
+  .header .cell {
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .last--cell {
     border-bottom: none;
-  }
-
-  /* Style for header row */
-  .header .cell {
-    font-weight: 700;
-    text-transform: uppercase;
   }
 
   /* Highlight the center column with red border */
@@ -1203,7 +1218,6 @@ body {
 
   .plan__card {
     width: calc(50% - 6.5rem);
-    border: 1px solid #FF000014;
     padding: 2.5rem;
     border-radius: 12px;
   }
@@ -1407,18 +1421,20 @@ body {
   }
 
   .faq-answer {
-    background-color: rgb(20, 20, 20);
-    color: #aaa;
     display: none;
     border-radius: 0 0 16px 16px;
   }
 
   .faq-item.open .faq-answer {
     display: block;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .faq-item.open .faq-question {
     background-color: rgb(20, 20, 20);
+    font-size: 15px;
+    line-height: 24px;
   }
 
   .faq__img_sm {
@@ -1616,6 +1632,10 @@ body {
   #method_section > div {
     max-width: 1180px;
     margin: auto;
+  }
+
+  .faq-item.open .faq-question {
+    font-size: 16px;
   }
 
   .games > img {
