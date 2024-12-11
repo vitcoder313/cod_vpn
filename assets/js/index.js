@@ -61,7 +61,34 @@ const updateHeroSectionBackground = () => {
     if (faqBg) {
       faqBg.classList.add('faq-bg');
     }
+
+    const cardIce = document.querySelector('.card-ice');
+    if (cardIce) {
+      cardIce.style.display = 'block'
+    }
   }
 };
 
 document.addEventListener("DOMContentLoaded", updateHeroSectionBackground);
+
+
+const textElement = document.querySelector('.hero-desc');
+const parentElement = textElement.parentElement;
+
+function adjustPosition() {
+  const parentWidth = parentElement.offsetWidth;
+  if (parentWidth < 1440) {
+    textElement.style.left = '';
+    return
+  }
+  const textWidth = textElement.offsetWidth;
+  console.log('parentWidth :>> ', parentWidth);
+  console.log('textWidth :>> ', textWidth);
+  const leftPosition = (parentWidth - 1440) / 2 - 20.5;
+  console.log('leftPosition :>> ', leftPosition);
+  if (leftPosition <= 60) return
+  textElement.style.left = `${leftPosition}px`;
+}
+
+adjustPosition();
+window.addEventListener('resize', adjustPosition);
