@@ -185,6 +185,8 @@ body {
 
 .platforms {
   bottom: 0.75rem;
+  right: 0;
+  left: 0;
 }
 
 .platforms img {
@@ -1165,7 +1167,7 @@ footer {
     padding-top: 22px;
   }
 
-  .footer .cell {
+  .footer-row .cell {
     padding-bottom: 22px;
   }
 
@@ -1599,8 +1601,6 @@ footer {
     bottom: 4.75rem;
     padding: 0 185px;
     max-width: 1440px;
-    right: 0;
-    left: 0;
   }
 
   .icon-md > img {
@@ -1720,7 +1720,7 @@ footer {
     padding-top: 24px;
   }
 
-  .footer .cell {
+  .footer-row .cell {
     padding-bottom: 24px;
   }
 
