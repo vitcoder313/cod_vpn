@@ -32,30 +32,30 @@ const updateHeroSectionBackground = () => {
       heroSection.classList.add("hero-section--winter");
     }
 
-    const gameLeft = document.querySelector(".games-winter-left");
-    if (gameLeft) {
-      gameLeft.style.display = "block";
-    }
+    // const gameLeft = document.querySelector(".games-winter-left");
+    // if (gameLeft) {
+    //   gameLeft.style.display = "block";
+    // }
 
-    const gameRight = document.querySelector(".games-winter-right");
-    if (gameRight) {
-      gameRight.style.display = "block";
-    }
+    // const gameRight = document.querySelector(".games-winter-right");
+    // if (gameRight) {
+    //   gameRight.style.display = "block";
+    // }
 
     const footer = document.querySelector(".footer");
     if (footer) {
       footer.classList.add("footer-winter");
     }
 
-    const pricingLeft = document.querySelector(".pricing-winter-left");
-    if (pricingLeft) {
-      pricingLeft.style.display = "block";
-    }
+    // const pricingLeft = document.querySelector(".pricing-winter-left");
+    // if (pricingLeft) {
+    //   pricingLeft.style.display = "block";
+    // }
 
-    const pricingRight = document.querySelector(".pricing-winter-right");
-    if (pricingRight) {
-      pricingRight.style.display = "block";
-    }
+    // const pricingRight = document.querySelector(".pricing-winter-right");
+    // if (pricingRight) {
+    //   pricingRight.style.display = "block";
+    // }
 
     const faqBg = document.querySelector('.faq-contain');
     if (faqBg) {

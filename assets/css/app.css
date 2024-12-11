@@ -31,45 +31,6 @@ body {
   pointer-events: none;
 }
 
-.games-winter-left {
-  position: absolute;
-  background: url(../images/snow_game_left.png) no-repeat;
-  width: 10rem;
-  height: 70rem;
-  pointer-events: none;
-}
-
-.games-winter-right {
-  position: absolute;
-  background: url(../images/snow_game_right.png) repeat-y;
-  width: 10rem;
-  height: 80rem;
-  right: 0;
-  background-position: right;
-  pointer-events: none;
-}
-
-.pricing-winter-left {
-  position: absolute;
-  background: url(../images/snow_game_left.png) repeat-y;
-  width: 10rem;
-  height: 70rem;
-  pointer-events: none;
-  z-index: -10;
-}
-
-.pricing-winter-right {
-  position: absolute;
-  background: url(../images/snow_game_right.png) repeat-y;
-  width: 10rem;
-  height: 100rem;
-  right: 0;
-  background-position: right;
-  pointer-events: none;
-  z-index: -10;
-  transform: translateY(40%);
-}
-
 /* Hero section */
 .hero-section {
   position: relative;
